@@ -1,16 +1,12 @@
-# Main Program for Aurum Bot
+# AURUM AI Bot
 
-from datetime import datetime
+class AurumAI:
+    def __init__(self):
+        self.name = 'AURUM AI'
 
-
-def get_current_datetime():
-    """Returns the current date and time in UTC.
-
-    Returns:
-        str: Current date and time in 'YYYY-MM-DD HH:MM:SS' format.
-    """
-    return datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')
-
+    def greet(self):
+        return f'Hello, I am {self.name}!'
 
 if __name__ == '__main__':
-    print(f"Current Date and Time (UTC): {get_current_datetime()()}")
+    bot = AurumAI()
+    print(bot.greet())
